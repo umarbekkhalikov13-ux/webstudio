@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1185px;
+    margin: 0 auto;
+    padding:0 15px;
+}
+img{
+    max-width: 100%;
+}
+.header{
+    padding: 25px 0;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-block-left{
+    display: flex;
+    gap: 93px;
+    align-items: center;
+}
+h1 > span {
+    color: #2196F3;
+}
+.header-menu{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+.header-item{
+    cursor: pointer;
+}
+.header-block-right{
+    display: flex;
+    gap: 50px;
+}
+.header-burger-img{
+    display: none;
+}
+.header-link{
+    color: black;
+    text-decoration: none;
+}
+/*header end*/
+.first{
+    background: black url("./img/first-bg.jpg") center/cover no-repeat;
+    padding: 200px 0;
+    text-align: center;
+}
+.first-title{
+    color: white;
+    font-size: 44px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.first-btn{
+    padding: 10px 32px;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+/*first-end*/
+.second{
+    padding: 80px 0 94px;
+}
+.second-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.second-text{
+    font-size: 14px;
+    color: rgba(117, 117, 117, 1);
+}
+/*second end*/
+
+.third{
+     padding-bottom: 94px;
+ }
+.third-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+.third-block{
+    display: flex;
+    gap: 30px;
+}
+/*third end*/
+.four{
+    background: rgba(245, 244, 250, 1);
+    padding: 94px 0;
+}
+.four-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+.four-block{
+    display: flex;
+    gap: 30px;
+}
+.four-box{
+    width: calc(25% - 22.5px);
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),0 1px 1px 0 rgba(0, 0, 0, 0.14),0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.four-box-img{
+    max-width: 100%;
+}
+.four-box-title{
+    text-align: center;
+    margin: 30px 0 10px;
+}
+.four-box-text{
+     text-align: center;
+     margin-bottom: 30px;
+     color: rgba(117, 117, 117, 1);
+ }
+/*four end*/
+
+.footer{
+    background: rgba(47, 48, 58, 1);
+    padding: 55px 0 60px;
+}
+.footer-title{
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: white;
+}
+.footer-title > span{
+    color: #2196F3;
+}
+.footer-text1{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+}
+.footer-text2{
+    margin: 10px 0;
+}
+.footer-link{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+/*start adaptive*/
+
+@media screen and (max-width:880px ) {
+    .header-menu{
+        display: none;
+    }
+    .header-block-right{
+        display: none;
+    }
+    .header-burger-img{
+        display: inline-block;
+        width: 70px;
+    }
+}
+/*header-end*/
+@media screen and (max-width:880px ) {
+    .first-title{
+        font-size: 20px;
+        justify-content: center;
+    }
+}
+/*first-end*/
+@media screen and (max-width:900px ) {
+    .second-block{
+        flex-wrap: wrap;
+        display: flex;
+        font-size: 20px ;
+        gap: 10px;
+    }
+}
+/*second-end*/
+@media screen and (max-width:950px ) {
+    .third-block{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+}
+@media screen and (max-width:700px ) {
+    .third-block{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .third-block{
+        width:100%;
+    }
+}
+/*third-end*/
+@media screen and (max-width:960px ) {
+    .four-block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .four-box{
+        width: calc(33.333333% - 30px);
+    }
+}
+@media screen and (max-width:700px ) {
+    .four-box{
+        width: calc(33.333333% - 15px);
+    }
+}
+@media screen and (max-width:550px ) {
+    .four-box{
+        width: 100%;
+    }
+}
+/*four-end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
